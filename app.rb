@@ -1,6 +1,3 @@
-require 'sinatra'
-require 'json'
-
 get '/api/v1/rules/random' do
   rule_number = (1..286).to_a.sample.to_s
   serialized_rules = File.read("rules_of_acquisition.json")
