@@ -55,7 +55,7 @@ get '/api/v1/rules' do
   rules = JSON.parse(serialized_rules)
   {
     success: true,
-    message: "Successfully got Rule of Acquisition",
+    message: "Successfully got Rules of Acquisition",
     data: rules
   }.to_json
 end
